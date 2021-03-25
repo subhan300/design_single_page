@@ -207,18 +207,98 @@ export default function PersistentDrawerLeft() {
         })}
       >
         <div className={classes.drawerHeader} />
-        <h1 style={{color:"white"}}>sss</h1>
-        <Typography paragraph style={{color:"white",opacity:4}}>
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
-          facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
-          tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
-          consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
-          vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. In
-          hendrerit gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem et
-          tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique sollicitudin
-          nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra maecenas
-          accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
-        </Typography>
+       
+       <div  style={{flex:".4",paddingTop:"25px",backgroundColor:"#041420",color:"white",opacity:.8,display:"flex",flexDirection:"column"}}>
+             
+             <div  style={{display:"flex",justifyContent:'space-evenly',flexWrap:"wrap"}}>
+                         
+                  <div>
+                    <label>Database:</label><br></br>
+                    <textarea style={{marginTop:"5px",backgroundColor:"#041420"}}></textarea>
+                  </div>
+                  <div>
+                    <label>Bin:</label><br></br>
+                    <textarea style={{marginTop:"5px",backgroundColor:"#041420"}}></textarea>
+                  </div>
+                  <div>
+                    <label>Country:</label><br></br>
+                    <textarea style={{marginTop:"5px",backgroundColor:"#041420"}}></textarea>
+                  </div>
+                  <div>
+                    <label>State:</label><br></br>
+                    <textarea style={{marginTop:"5px",backgroundColor:"#041420"}}></textarea>
+                  </div>
+                  <div>
+                    <label>Zip:</label><br></br>
+                    <textarea style={{marginTop:"5px",backgroundColor:"#041420"}}></textarea>
+                  </div>
+
+
+             </div>
+             
+             <div  style={{display:"flex",justifyContent:'space-evenly',flexWrap:"wrap",flex:".4",marginTop:"15px"}}>
+                         
+                         <div>
+                           <label>Type:</label><br></br>
+                           <textarea style={{marginTop:"5px",backgroundColor:"#041420"}}></textarea>
+                         </div>
+                         <div>
+                           <label>Code:</label><br></br>
+                           <textarea style={{marginTop:"5px",backgroundColor:"#041420"}}></textarea>
+                         </div>
+                         <div>
+                           <label>Level:</label><br></br>
+                           <textarea style={{marginTop:"5px",backgroundColor:"#041420"}}></textarea>
+                         </div>
+                         <div>
+                           <label>Class:</label><br></br>
+                           <textarea style={{marginTop:"5px",backgroundColor:"#041420"}}></textarea>
+                         </div>
+                         <div>
+                           <label>Bank:</label><br></br>
+                           <textarea style={{marginTop:"5px",backgroundColor:"#041420"}}></textarea>
+                         </div>
+       
+       
+                    </div>
+          {/* third row */}
+
+
+          <div  style={{display:"flex",justifyContent:'space-evenly',flexWrap:"wrap",flex:".4",marginTop:"15px"}}>
+                         
+                         <div>
+                           <label>last 4:</label><br></br>
+                           <textarea style={{marginTop:"5px",backgroundColor:"#041420"}}></textarea>
+                         </div>
+                         <div>
+                           <label>Track 1:</label><br></br>
+                           <textarea style={{marginTop:"5px",backgroundColor:"#041420"}}></textarea>
+                         </div>
+                         <div>
+                           <label>Vendor:</label><br></br>
+                           <textarea style={{marginTop:"5px",backgroundColor:"#041420"}}></textarea>
+                         </div>
+                         <div>
+                           <label>Per page:</label><br></br>
+                           <textarea style={{marginTop:"5px",backgroundColor:"#041420"}}></textarea>
+                         </div>
+                         <div>
+                           <label>Price:</label><br></br>
+                           <textarea style={{marginTop:"5px",backgroundColor:"#041420"}}></textarea>
+                         </div>
+       
+       
+                    </div>
+
+          {/* third row */}
+       </div>
+
+
+           
+          
+
+    
+       
       </main>
     </div>
   );
