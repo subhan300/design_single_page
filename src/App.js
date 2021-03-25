@@ -55,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
+    zIndex:"-1"
   },
   drawerPaper: {
     width: drawerWidth,
@@ -73,6 +74,7 @@ const useStyles = makeStyles((theme) => ({
     // necessary for content to be below app bar
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
+    zIndex:"-1"
    
   },
   content: {
@@ -118,7 +120,7 @@ export default function PersistentDrawerLeft() {
           [classes.appBarShift]: open,
         })  } 
       >
-        <Toolbar style={{display:"flex",justifyContent:"space-between"}}>
+        <Toolbar style={{display:"flex",justifyContent:"space-between",zIndex:1}}>
          <div> 
            {/* <IconButton
             color="inherit"
@@ -133,8 +135,10 @@ export default function PersistentDrawerLeft() {
             aria-label="open drawer"
             onClick={handleDrawerOpen}
             edge="start"
-            className={clsx(classes.menuButton, open && classes.hide)}>
-            Persistent drawer
+            className={clsx(classes.menuButton, open && classes.hide)}
+            
+            >
+            Russian Market
           </Typography></div>
 
 
@@ -172,9 +176,12 @@ export default function PersistentDrawerLeft() {
 
         id="Drawer"
 
+
       >
        
-        <img   onClick={handleDrawerClose} style={{marginTop:"25px",width:"200px",marginLeft:"10px",zIndex:1}} src="https://russianmarket.gs/resources/logo/zhAG7DczoD.png"></img>
+        <img   
+        onClick={handleDrawerClose} 
+        style={{marginTop:"25px",width:"200px",marginLeft:"10px",zIndex:1}} src="https://russianmarket.gs/resources/logo/zhAG7DczoD.png"></img>
          {/* <h3 style={{color:"white",marginLeft:"25px"}} onClick={handleDrawerClose}>RUSSIAN MARKET</h3> */}
         <div className={classes.drawerHeader} >
           <IconButton onClick={handleDrawerClose}>
@@ -184,7 +191,8 @@ export default function PersistentDrawerLeft() {
         <Divider  />
        
         <List style={{color:"white"}} >
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+        {/* 'Paypal','Checkers','Tools','My Purchase','Support' */}
+          {['News', "Cvv", 'Dump', 'Rdp','Stealer Logs',].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
               <ListItemText primary={text} />
