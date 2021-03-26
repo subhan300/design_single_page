@@ -121,32 +121,35 @@ export default function PersistentDrawerLeft() {
         })  } 
       >
         <Toolbar style={{display:"flex",justifyContent:"space-between",zIndex:1}}>
-         <div> 
-           {/* <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            className={clsx(classes.menuButton, open && classes.hide)}
-          >
-            <MenuIcon />
-          </IconButton> */}
-          <Typography variant="h6" noWrap  color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            className={clsx(classes.menuButton, open && classes.hide)}
+         <div style={{display:"flex",justifyContent:"flex-start",alignItems:"center"}}> 
+         <div>
+             <IconButton
+                color="inherit"
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              className={clsx(classes.menuButton, open && classes.hide)}>
+                     <MenuIcon />
+              </IconButton>
+         </div>
+         <div>
+
+         <Typography variant="h6" noWrap  color="inherit"
+           
             
             >
             Russian Market
-          </Typography></div>
+          </Typography>
+         </div>
+          
+        </div>
 
 
         
           <div id="right"  style={{flex:.3,display:'flex',justifyContent:"space-between",alignItems:"center",border:"2px solid green"}}>
        <div  style={{}}>  <MailOutlineIcon   /></div>
      
-       <div><NotificationsNoneOutlinedIcon /></div>
+       <div style={{display:"hide"}}><NotificationsNoneOutlinedIcon /></div>
        <div><ShoppingCartOutlinedIcon  /></div>
        <div>< LocalMallOutlinedIcon /></div>
        <div><AspectRatioOutlinedIcon /></div>
@@ -182,14 +185,32 @@ export default function PersistentDrawerLeft() {
         <img   
         onClick={handleDrawerClose} 
         style={{marginTop:"25px",width:"200px",marginLeft:"10px",zIndex:1}} src="https://russianmarket.gs/resources/logo/zhAG7DczoD.png"></img>
+         
+         <div style={{padding:"20px",color:"white",display:"flex",border:"2px solid red",justifyContent:'center',alignItems:"center"}} >
+          <div>
+         <div style={{display:"flex",flexWrap:"wrap",justifyContent:"center"}}> <img style={{flex:".6"}} src="https://russianmarket.gs/resources/logo/user.png"></img> 
+         <p style={{flex:".6"}}>subhanakram300</p>
+         <p className="user" style={{color:"blue",marginTop:"-35px",marginLeft:"75px",fontSize:"17px"}}>user</p>
+         
+         
+         </div>
+
+
+      
+           
+          </div>
+           </div>
          {/* <h3 style={{color:"white",marginLeft:"25px"}} onClick={handleDrawerClose}>RUSSIAN MARKET</h3> */}
         <div className={classes.drawerHeader} >
+       
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
+        
         </div>
-        <Divider  />
        
+        <Divider  />
+    
         <List style={{color:"white"}} >
         {/* 'Paypal','Checkers','Tools','My Purchase','Support' */}
           {['News', "Cvv", 'Dump', 'Rdp','Stealer Logs',].map((text, index) => (

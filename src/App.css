@@ -23,3 +23,14 @@
  #Drawer{
   /* background-color: #041420; */
 } 
+
+
+
+
+@media only screen and (max-width:700px) {
+.user{
+    margin-top:-150px;
+    margin-left: 120px;
+
+  }
+}
